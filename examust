@@ -1,4 +1,7 @@
- mkdir -p ansible-project
+https://docs.google.com/document/d/1YjGo6zlvcbnCzemkVYQyM6namTQXBhvVLViwScQfHzo/edit?usp=sharing
+ 
+
+mkdir -p ansible-project
   163  cd ansible-project
   164  nano ansible.cfg
   165  nano inventory
