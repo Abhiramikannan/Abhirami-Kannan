@@ -1,0 +1,125 @@
+ mkdir -p ansible-project
+  163  cd ansible-project
+  164  nano ansible.cfg
+  165  nano inventory
+  166  cd roles
+  167  mkdir roles
+  168  cd roles
+  169  ansible-galaxy init webserver
+  170  mkdir webservers
+  171  mkdir tasks
+  172  nano main.yaml
+  173  cd ..
+  174  cd roles
+  175  nano main.yaml
+  176  ls
+  177  rm -rf main.yaml
+  178  rm -rf webservers
+  179  ls
+  180  cd webserver/
+  181  ls
+  182  cd tasks/
+  183  nano main.yaml
+  184  cd ..
+  185  ls
+  186  cd handlers/
+  187  nano main.yaml
+  188  cd ..
+  189  cd templates/
+  190  ls
+  191  nano index.html.j2
+  192  cd ..
+  193  nano site.yaml
+  194  ansible-playbook site.yml --tags "apache" --ask-vault-pass
+  195  ansible-playbook site.yaml --tags "apache" --ask-vault-pass
+  196  ansible-playbook site.yaml --tags "apache" -kK
+  197  nano site.yaml
+  198  cat site.yaml
+  199  nano site.yaml
+  200  ansible-playbook site.yaml --tags "apache" -kK
+  201  ls
+  202  l
+  203  nano ansible.cfg
+  204  ansible-playbook site.yaml --tags "apache" -kK
+  205  ls
+  206  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  207  cat inventory
+  208  ansible-playbook -i inventory site.yaml --tags "apache" -K
+  209  exit
+  210  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  211  cd ansible-project/
+  212  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  213  exit
+  214  cd ansible-project/
+  215  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  216  cd ..
+  217  cd ansible
+  218  ls
+  219  cat ansible.cfg
+  220  ls
+  221  pwd
+  222  cd ..
+  223  cd ansible-project/
+  224  ls
+  225  cd roles
+  226  ls
+  227  cd tasks
+  228  l
+  229  ls
+  230  cd ..
+  231  cd tasks
+  232  cd ..
+  233  ls
+  234  cd webserver/
+  235  ls
+  236  cd tasks/
+  237  ls
+  238  main.yml
+  239  cat main.yml
+  240  cat main.yaml
+  241  nano main.yaml
+  242  cd ..
+  243  ansible-playbook site.yaml --tags "apache" --ask-vault-pass
+  244  echo "abhi" > ~/.vault_pass.txt
+  245  chmod 600 ~/.vault_pass.txt
+  246  ansible-playbook site.yaml --tags "apache" --vault-password-file ~/.vault_pass.txt
+  247  ansible-playbook site.yaml --tags "apache"
+  248  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  249  exit
+  250  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  251  cd ansible-project/
+  252  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  253  ls
+  254  cat inventory
+  255  cd roles
+  256  ls
+  257  cd ..
+  258  cd ansible
+  259  ls
+  260  cd roles
+  261  ls
+  262  cd ..
+  263  mkdir roless
+  264  rm -rf roless
+  265  cd ..
+  266  cp ansible-project/ ./ansible
+  267  cp -r ansible-project/ ./ansible
+  268  cd ansible
+  269  cd ansible-project/
+  270  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  271  nano inventory
+  272  ansible-playbook -i inventory site.yaml --tags "apache" -kK
+  273  ansible-vault encrypt group_vars/all/vault.yml
+  274  ls
+  275  mkdir group_vars/all/
+  276  mkdir group_vars
+  277  cd group_vars/
+  278  mkdir all
+  279  cd all
+  280  ls
+  281  nano vault.yaml
+  282  ansible-vault encrypt group_vars/all/vault.yml
+  283  cd ..
+  284  ansible-vault encrypt group_vars/all/vault.yml
+  285  ansible-vault encrypt group_vars/all/vault.yaml
+  286  history
